@@ -108,6 +108,7 @@
             LbCrearUsuario.Size = new Size(255, 16);
             LbCrearUsuario.TabIndex = 6;
             LbCrearUsuario.Text = "¿No tienes usuario?. ¡REGISTRATE AQUI!";
+            LbCrearUsuario.Click += LbCrearUsuario_Click;
             // 
             // IconbAceptar
             // 
@@ -118,12 +119,15 @@
             IconbAceptar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
             IconbAceptar.IconColor = Color.White;
             IconbAceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            IconbAceptar.Location = new Point(232, 248);
+            IconbAceptar.IconSize = 30;
+            IconbAceptar.ImageAlign = ContentAlignment.TopLeft;
+            IconbAceptar.Location = new Point(195, 240);
             IconbAceptar.Name = "IconbAceptar";
-            IconbAceptar.Size = new Size(89, 29);
+            IconbAceptar.Size = new Size(126, 37);
             IconbAceptar.TabIndex = 7;
-            IconbAceptar.Text = "Aceptar";
+            IconbAceptar.Text = "  Aceptar";
             IconbAceptar.UseVisualStyleBackColor = false;
+            IconbAceptar.Click += IconbAceptar_Click;
             // 
             // IconBCancelar
             // 
@@ -133,11 +137,13 @@
             IconBCancelar.IconChar = FontAwesome.Sharp.IconChar.CircleExclamation;
             IconBCancelar.IconColor = Color.Black;
             IconBCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            IconBCancelar.Location = new Point(335, 248);
+            IconBCancelar.IconSize = 30;
+            IconBCancelar.ImageAlign = ContentAlignment.MiddleLeft;
+            IconBCancelar.Location = new Point(335, 240);
             IconBCancelar.Name = "IconBCancelar";
-            IconBCancelar.Size = new Size(89, 29);
+            IconBCancelar.Size = new Size(126, 37);
             IconBCancelar.TabIndex = 8;
-            IconBCancelar.Text = "Cancelar";
+            IconBCancelar.Text = "     Cancelar";
             IconBCancelar.UseVisualStyleBackColor = false;
             // 
             // Login_Principal

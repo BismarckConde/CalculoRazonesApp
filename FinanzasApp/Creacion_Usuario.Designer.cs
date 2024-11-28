@@ -32,9 +32,9 @@
             pictureBox1 = new PictureBox();
             label2 = new Label();
             IconbAceptar = new FontAwesome.Sharp.IconButton();
-            txrContraseñaLogin = new TextBox();
+            txtcontra = new TextBox();
             label3 = new Label();
-            txtUsuarioLogin = new TextBox();
+            txtusuario = new TextBox();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -68,21 +68,24 @@
             IconbAceptar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
             IconbAceptar.IconColor = Color.White;
             IconbAceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            IconbAceptar.IconSize = 30;
+            IconbAceptar.ImageAlign = ContentAlignment.MiddleLeft;
             IconbAceptar.Location = new Point(336, 216);
             IconbAceptar.Name = "IconbAceptar";
             IconbAceptar.Size = new Size(114, 29);
             IconbAceptar.TabIndex = 13;
-            IconbAceptar.Text = "Aceptar";
+            IconbAceptar.Text = "     Aceptar";
             IconbAceptar.UseVisualStyleBackColor = false;
+            IconbAceptar.Click += IconbAceptar_Click;
             // 
-            // txrContraseñaLogin
+            // txtcontra
             // 
-            txrContraseñaLogin.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold);
-            txrContraseñaLogin.Location = new Point(258, 157);
-            txrContraseñaLogin.Name = "txrContraseñaLogin";
-            txrContraseñaLogin.PasswordChar = '*';
-            txrContraseñaLogin.Size = new Size(192, 27);
-            txrContraseñaLogin.TabIndex = 11;
+            txtcontra.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold);
+            txtcontra.Location = new Point(258, 157);
+            txtcontra.Name = "txtcontra";
+            txtcontra.PasswordChar = '*';
+            txtcontra.Size = new Size(192, 27);
+            txtcontra.TabIndex = 11;
             // 
             // label3
             // 
@@ -94,13 +97,13 @@
             label3.TabIndex = 10;
             label3.Text = "Contraseña :";
             // 
-            // txtUsuarioLogin
+            // txtusuario
             // 
-            txtUsuarioLogin.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold);
-            txtUsuarioLogin.Location = new Point(258, 92);
-            txtUsuarioLogin.Name = "txtUsuarioLogin";
-            txtUsuarioLogin.Size = new Size(192, 27);
-            txtUsuarioLogin.TabIndex = 9;
+            txtusuario.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold);
+            txtusuario.Location = new Point(258, 92);
+            txtusuario.Name = "txtusuario";
+            txtusuario.Size = new Size(192, 27);
+            txtusuario.TabIndex = 9;
             // 
             // label1
             // 
@@ -120,9 +123,9 @@
             ClientSize = new Size(481, 270);
             Controls.Add(label1);
             Controls.Add(IconbAceptar);
-            Controls.Add(txrContraseñaLogin);
+            Controls.Add(txtcontra);
             Controls.Add(label3);
-            Controls.Add(txtUsuarioLogin);
+            Controls.Add(txtusuario);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Name = "Creacion_Usuario";
@@ -137,9 +140,9 @@
         private PictureBox pictureBox1;
         private Label label2;
         private FontAwesome.Sharp.IconButton IconbAceptar;
-        private TextBox txrContraseñaLogin;
+        private TextBox txtcontra;
         private Label label3;
-        private TextBox txtUsuarioLogin;
+        private TextBox txtusuario;
         private Label label1;
     }
 }
